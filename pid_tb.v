@@ -45,7 +45,7 @@ module pid_tb();
         #15
 
         // test 2 (negative error)
-        data_in = 16'd55000;
+        data_in = 16'd56000;
         #1
         pid_start = 1'b1;
         #2
@@ -54,7 +54,7 @@ module pid_tb();
         #15
 
         // test 3 (positive error)
-        data_in = 16'd51000;
+        data_in = 16'd52000;
         #1
         pid_start = 1'b1;
         #2

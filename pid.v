@@ -81,7 +81,7 @@ module pid (
 
                 ADD_PID:
                 begin
-                    pid_total <= prev_out + (p + i + d);
+                    pid_total <= prev_out + (p + i + d) / 2048; // output scaling with 2048
 
                     state <= ADJUST_PID_VALUE;
                 end
