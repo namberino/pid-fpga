@@ -1,6 +1,6 @@
 # PID Controller
 
-![pid diagram](pid-diagram.png)
+![pid diagram](../img/pid-diagram.png)
 
 A PID controller operates by acquiring the error, which is the difference between the input and the setpoint. The setpoint is the desired output. With the error, we can operate on the error using proportional, integral, and derivative equations.
 
@@ -32,7 +32,7 @@ We want to tune the system to be critically damped. This allows the system to ap
 
 # States
 
-![states diagram](states.png)
+![states diagram](../img/states.png)
 
 | State | Description |
 | --- | --- |
