@@ -1,0 +1,65 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Mon May 27 04:40:42 2024
+[*]
+[dumpfile] "pid_tb.vcd"
+[dumpfile_mtime] "Mon May 27 04:40:31 2024"
+[dumpfile_size] 3053
+[savefile] "pid_tb.gtkw"
+[timestart] 0
+[size] 1288 600
+[pos] -1 -1
+*-4.339121 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] pid_tb.
+[sst_width] 253
+[signals_width] 207
+[sst_expanded] 1
+[sst_vpaned_height] 159
+@28
+pid_tb.clk
+pid_tb.rst
+pid_tb.pid_start
+@24
+pid_tb.data_in[15:0]
+@22
+pid_tb.data_out[15:0]
+@28
+pid_tb.uut.state[2:0]
+@24
+pid_tb.uut.p[15:0]
+pid_tb.uut.i[15:0]
+pid_tb.uut.d[15:0]
+pid_tb.uut.pid_total[31:0]
+@25
+pid_tb.uut.error[15:0]
+@24
+pid_tb.uut.prev_error[15:0]
+pid_tb.uut.prev_out[15:0]
+[pattern_trace] 1
+[pattern_trace] 0
