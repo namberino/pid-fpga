@@ -4,4 +4,4 @@ Proportional - Integral - Derivative (PID) controller is a control structure use
 
 This project aims to implement a PID controller on FPGA. This provides many advantages: programmable bit widths, speed, power efficiency. Because of the reprogrammability of FPGA, it has lots of advantages over Application Specific Standard Product (ASSP) such as flexibility, performance and customizability. This means an PID controller designed for a specific FPGA to be used in a specific application can be modified to operate differently if we need to use that specific FPGA for other applications.
 
-![simulation](sim.png)
+![simulation](img/sim.png)
