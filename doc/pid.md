@@ -1,3 +1,7 @@
+# Overview
+
+PID controllers are widely used in automations. They are usually implemented in analog circuits or in software. This project aims to implement a PID controller in FPGA, which can improve the efficiency, power, footprint, and customizability. This PID controller can be used for various applications. This can be used in various applications such as temperature control in HVAC systems, voltage regulation, CNC machines, etc.
+
 # PID Controller
 
 ![pid diagram](../img/pid-diagram.png)
@@ -43,6 +47,16 @@ We want to tune the system to be critically damped. This allows the system to ap
 | **ADJUST_PID_VALUE** | Align the PID total value with 16-bit |
 | **OUTPUT_PID** | Output PID total |
 
+# Implementation
+
+The PID controller that we implemented requires a clock and reset signal
+
 # PID in FPGA
 
 The PID controller we have currently can take 16-bit input and can output a 16-bit data (which represents the control variable). However, because of the reprogrammability of FPGA, we can modify this to take in data with different bit widths, which makes this highly configurable
+
+# Advantages over traditional PID controller
+
+Because of the reprogrammability of FPGA, it makes PID controllers implemented in FPGA much more flexible compared to traditional analog implementations. For example, an FPGA PID controller made for servo motors can be later reprogrammed to be used for a voltage regulator. This level of flexibility and reprogrammability can make PID controller in FPGA very cost effective. 
+
+Because the PID controller in FPGA is implemented at register transfer level, it is much faster compared to software implementations. Since software implementations are often done with high-level programming languages like C/C++, they make the PID controller a lot slower. The FPGA PID controller can calculate and operate at a faster speed.

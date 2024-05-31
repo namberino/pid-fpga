@@ -1,3 +1,4 @@
+`timescale 1ps/1ps
 module pid (
     input clk,
     input rst,
