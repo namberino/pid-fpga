@@ -34,7 +34,11 @@ The gain constants need to be tuned in order to fit the application. If we tune 
 
 We want to tune the system to be critically damped. This allows the system to approach the desired value quickly with a error rate close to 0.
 
-# States
+# Implementation
+
+The PID controller that we implemented requires a clock and reset signal. For the inputs, the controller takes in a 1-bit `pid_start` signal and a 16-bit `data_in` signal.
+
+The controller ultilizes a finite state machine with 6 different states to handle each stage of calculation and operation:
 
 ![states diagram](../img/states.png)
 
@@ -47,9 +51,27 @@ We want to tune the system to be critically damped. This allows the system to ap
 | **ADJUST_PID_VALUE** | Align the PID total value with 16-bit |
 | **OUTPUT_PID** | Output PID total |
 
-# Implementation
+We can set the setpoint in the controller and tune the controller by modifying the PID constants kp, kd, and ki.
 
-The PID controller that we implemented requires a clock and reset signal
+The controller's output will be the control variable, which can be sent back to the system to correct the error. The output is limited to a range of 1-65535.
+
+# Schematic
+
+# Simulation
+
+Setpoint: 54321
+
+- No error (`data_in` = 54321):
+
+![no error simulation](../img/no-error-sim.png)
+
+- Negative error (`data_in` = 56000):
+
+![negative error simulation](../img/neg-error-sim.png)
+
+- Positive error (`data_in` = 52000):
+
+![positive error simulation](../img/pos-error-sim.png)
 
 # PID in FPGA
 
