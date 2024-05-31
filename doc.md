@@ -4,7 +4,7 @@ PID controllers are widely used in automations. They are usually implemented in 
 
 # PID Controller
 
-![pid diagram](../img/pid-diagram.png)
+![pid diagram](img/pid-diagram.png)
 
 A PID controller operates by acquiring the error, which is the difference between the input and the setpoint. The setpoint is the desired output. With the error, we can operate on the error using proportional, integral, and derivative equations.
 
@@ -40,7 +40,7 @@ The PID controller that we implemented requires a clock and reset signal. For th
 
 The controller ultilizes a finite state machine with 6 different states to handle each stage of calculation and operation:
 
-![states diagram](../img/states.png)
+![states diagram](img/states.png)
 
 | State | Description |
 | --- | --- |
@@ -57,25 +57,27 @@ The controller's output will be the control variable, which can be sent back to 
 
 # Schematic
 
+![schematic](img/schematic.png)
+
 # Simulation
 
 Setpoint: 54321
 
 - No error (`data_in` = 54321):
 
-![no error simulation](../img/no-error-sim.png)
+![no error simulation](img/no-error-sim.png)
 
 - Negative error (`data_in` = 56000):
 
-![negative error simulation](../img/neg-error-sim.png)
+![negative error simulation](img/neg-error-sim.png)
 
 - Positive error (`data_in` = 52000):
 
-![positive error simulation](../img/pos-error-sim.png)
+![positive error simulation](img/pos-error-sim.png)
 
-# PID in FPGA
+# Reprogrammability
 
-The PID controller we have currently can take 16-bit input and can output a 16-bit data (which represents the control variable). However, because of the reprogrammability of FPGA, we can modify this to take in data with different bit widths, which makes this highly configurable
+The PID controller we have currently can take 16-bit input and can output a 16-bit data (which represents the control variable). However, because of the reprogrammability of FPGA, we can modify this to take in data with different bit widths, which makes this highly configurable.
 
 # Advantages over traditional PID controller
 
