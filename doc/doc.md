@@ -55,6 +55,8 @@ We can set the setpoint in the controller and tune the controller by modifying t
 
 The controller's output will be the control variable, which can be sent back to the system to correct the error. The output is limited to a range of 1-65535.
 
+The output data can be put through a DAC (digital-to-analog converter) to convert from the digital 16-bit data to analog data. This analog data can be fed into a system to control it and reduce the error that the system may produce.
+
 # Schematic
 
 ![schematic](../img/schematic.png)
@@ -84,3 +86,12 @@ The PID controller we have currently can take 16-bit input data and can output a
 Because of the reprogrammability of FPGA, it makes PID controllers implemented in FPGA much more flexible compared to traditional analog implementations. For example, an FPGA PID controller made for servo motors can be later reprogrammed to be used for a voltage regulator. This level of flexibility and reprogrammability can make PID controller in FPGA very cost effective. 
 
 Because the PID controller in FPGA is implemented at register transfer level, it is much faster compared to software implementations. Since software implementations are often done with high-level programming languages like C/C++, they make the PID controller a lot slower. The FPGA PID controller can calculate and operate at a faster speed.
+
+# Conclusion
+
+PID controller in FPGA can help speed up development and testing. It offers more reprogrammability, speed, and lower cost compared to traditional implementations of PID controllers. 
+
+# References
+
+- [Wikipedia page for PID  controller](https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller)
+- [PID Controller Using FPGA Technology](https://www.researchgate.net/publication/221915777_PID_Controller_Using_FPGA_Technology)
