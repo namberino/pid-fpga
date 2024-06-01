@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
-[*] Mon May 27 04:40:42 2024
+[*] Sat Jun  1 06:06:28 2024
 [*]
 [dumpfile] "pid_tb.vcd"
-[dumpfile_mtime] "Mon May 27 04:40:31 2024"
-[dumpfile_size] 3053
+[dumpfile_mtime] "Sat Jun  1 06:05:33 2024"
+[dumpfile_size] 2989
 [savefile] "pid_tb.gtkw"
 [timestart] 0
 [size] 1288 600
-[pos] -1 -1
-*-4.339121 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[pos] 151 89
+*-4.039121 57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 [markername] AA
 [markername] BB
 [markername] CC
@@ -47,7 +47,7 @@ pid_tb.rst
 pid_tb.pid_start
 @24
 pid_tb.data_in[15:0]
-@22
+@25
 pid_tb.data_out[15:0]
 @28
 pid_tb.uut.state[2:0]
@@ -56,9 +56,7 @@ pid_tb.uut.p[15:0]
 pid_tb.uut.i[15:0]
 pid_tb.uut.d[15:0]
 pid_tb.uut.pid_total[31:0]
-@25
 pid_tb.uut.error[15:0]
-@24
 pid_tb.uut.prev_error[15:0]
 pid_tb.uut.prev_out[15:0]
 [pattern_trace] 1
