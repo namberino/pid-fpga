@@ -93,5 +93,8 @@ PID controller in FPGA can help speed up development and testing. It offers more
 
 # References
 
+- [PID Controller Using FPGA Technology by Abdesselem Trimeche, Anis Sakly, Abdelatif Mtibaa, and Mohamed Benrejeb](https://www.researchgate.net/publication/221915777_PID_Controller_Using_FPGA_Technology)
+- [Design & Implementation of FPGA Based on PID
+Controller with Motor & Sensor by Rajesh Nema, Rajeev Thakur, and Ruchi Gupta](https://www.ijese.org/wp-content/uploads/Papers/v1i3/C0122011313.pdf)
+- [FPGA based PID controller by Deep Chakraborty](https://github.com/deepc94/pid-fpga-vhdl)
 - [Wikipedia page for PID  controller](https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller)
-- [PID Controller Using FPGA Technology](https://www.researchgate.net/publication/221915777_PID_Controller_Using_FPGA_Technology)
