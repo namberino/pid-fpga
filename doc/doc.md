@@ -75,9 +75,9 @@ Setpoint: 54321
 
 ![positive error simulation](../img/pos-error-sim.png)
 
-# Reprogrammability
+# Reprogrammability of controller
 
-The PID controller we have currently can take 16-bit input and can output a 16-bit data (which represents the control variable). However, because of the reprogrammability of FPGA, we can modify this to take in data with different bit widths, which makes this highly configurable.
+The PID controller we have currently can take 16-bit input data and can output a 16-bit data (which represents the control variable). However, because of the reprogrammability of FPGA, we can modify this to take in data with different bit widths, which makes this highly configurable.
 
 # Advantages over traditional PID controller
 
